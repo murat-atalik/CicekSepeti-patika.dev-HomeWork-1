@@ -18,7 +18,6 @@ const listCart = (data) => {
   let cartCount = 0;
   for (let i = 0; i < data.length; i++) {
     const element = data[i];
-    console.log(element);
     const gridItem = document.createElement("div");
     const gridImg = document.createElement("div");
     const gridImgSource = document.createElement("img");
@@ -86,3 +85,9 @@ const form = document
 const cards = document
   .querySelector(".cards")
   .addEventListener("click", hideForms);
+
+document.querySelector(".formButton").addEventListener("click", formModal);
+
+const formModal = () => {
+  console.log("HEllow");
+};
