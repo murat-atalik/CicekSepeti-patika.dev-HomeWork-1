@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>First Html CSS Trying Page</title>
+    <script src="js/script.js" defer></script>
+</head>
+
+<nav class="nav">
+
+    <img class="logo" src="images/logo.png" alt="logo">
+
+    <div class="search-bar">
+        <input class="textinput" type="text" id="searchBar" name="search" placeholder="Search">
+        <img src="images/search.png" class="search-icon"></img>
+    </div>
+    <img class="avatar"
+        src="https://i.picsum.photos/id/267/200/200.jpg?hmac=Y1nyfMYjg-MPsZP0aKx1TqI1ogQRSYtHkM5kpZpybqk" />
+</nav>
+
+<div class="sidebar">
+    <ul class="sidebar-menu-list d-flex flex-direction-column">
+        <h2 style="color: var(--logoColor);">Sidebar Header</h2>
+        <li class="sidebar-menu-item forms">
+            <a href="#" class="sidebar-menu-link d-flex">
+                <span class="sidebarSpan">Forms</span>
+            </a>
+        </li>
+
+        <li class="sidebar-menu-item cards">
+            <a href="#" class="sidebar-menu-link d-flex">
+                <span class="sidebarSpan">Cards</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="together">
+    <form class="companyForm">
+        <label for="company">Company:</label><input id="company" type="text">
+        <br>
+        <label for="fname">First Name:</label><input id="fname" type="text">
+        <br>
+        <label for="lname">Last Name:</label><input id="lname" type="text">
+        <br>
+        <label for="email">Email Address:</label><input id="email" type="text">
+        <br>
+        <label for="title">Title:</label><input id="title" type="text">
+        <br>
+        <label for="phone">Phone:</label><input id="phone" type="text">
+        <br>
+        <label for="session">252 Training Session 2021:</label>
+        <select name="dates" id="session">
+            <option value="q1">01/02/2021</option>
+            <option value="q2">01/05/2021</option>
+            <option value="q3">01/08/2021</option>
+            <option value="q4">01/011/2021</option>
+
+        </select>
+
+        <br>
+        <label for="jobs">Job Function:</label>
+
+         <div class="select">
+
+            <span><input type="radio" id="cM" name="job_function" value="Campaign Management">
+                <label for="cM">Campaign Management</label>
+            </span>
+            <span> <input type="radio" id="cRM" name="job_function" value="CRM Administration">
+                <label for="cRM">CRM Administration</label>
+            </span>
+            <span> <input type="radio" id="emaildep" name="job_function" value="Email Deployment">
+                <label for="emaildep">Email Deployment</label>
+            </span>
+            <span>
+                <input type="radio" id="partner" name="job_function" value="Partner">
+                <label for="partner">Partner</label>
+            </span>
+            <span> <input type="radio" id="employee" name="job_function" value="Employee">
+                <label for="employee">Employee</label>
+            </span>
+        </div>
+
+
+        <label for="requirements">Dietary Requirements:</label><input id="requirements" type="text">
+        <br>
+        <label for="exception">Exceptions?:</label><textarea name="exception" id="exception" cols="30"
+            rows="10"></textarea>
+        <br>
+        <button class="formButton" type="button" value="Submit">Submit</button>
+    </form>
+
+    <div class="grid-container">
+
+
+    </div>
+</div>
+
+</div>
+
+
+</div>
+
+</body>
+
+</html>

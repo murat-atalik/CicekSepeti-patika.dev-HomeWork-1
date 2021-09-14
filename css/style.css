@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --middleGrey: #8a817c;
+  --darklava: #463f3a;
+  --alabaster: #f4f3ee;
+  --logoColor: #bcb8b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: var(--middleGrey);
+}
+
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  border-bottom: 4px solid var(--darklava);
+  padding: 10px 0;
+  align-items: center;
+  height: 75px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.search-bar {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0 0 0 1.2rem;
+  margin: 0 20px;
+  flex-wrap: wrap;
+}
+
+.search-bar > .textinput {
+  border-radius: 10px;
+  width: 100½;
+  flex-basis: 1200px;
+  height: 40px;
+  padding-left: 30px;
+  min-width: 135px;
+  max-width: 1200px;
+}
+
+.search-bar > .search-icon {
+  position: absolute;
+  left: 15px;
+  align-self: center;
+  margin: 0px 15px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Form & Grid .Together */
+.together {
+  background-color: var(--middleGrey);
+  display: flex;
+  justify-content: space-evenly;
+  /*  */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 210px;
+  height: 100vh;
+  display: block;
+  float: left;
+  background-color: var(--middleGrey);
+  border-right: 3px solid var(--darklava);
+  margin-right: 5px;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.sidebar-menu-list {
+  width: 100%;
+  margin-top: 1rem;
+}
+.sidebar-menu-item {
+  margin: 10px 0;
+  width: 178px;
+  padding: 10px 0;
+  border: 1px solid var(--alabaster);
+}
+a {
+  text-decoration-color: var(--alabaster);
+}
+.sidebar-menu-link {
+  padding-left: 0.5rem;
+}
+
+.sidebar-menu-link i {
+  margin-right: 1rem;
+  color: var(--logoColor);
+}
+.sidebarSpan {
+  color: var(--alabaster);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  background-color: var(--middleGrey);
+  padding: 2rem;
+  grid-gap: 1rem;
+}
+.grid-item {
+  background-color: var(--logoColor);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+/* Form start*/
+/* div abuslama kendine not ?DSAdasd*/
+
+.companyForm {
+  margin: 0 auto;
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  border: 1px solid var(--darklava);
+  width: 50rem;
+}
+.companyForm > .select > span {
+  display: block;
+}
+.companyForm > input {
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+.companyForm > textarea {
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  resize: vertical;
+  min-height: 2rem;
+}
+.companyForm > select {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border-top: 1rem;
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: linear-gradient(
+      45deg,
+      transparent 50%,
+      var(--middleGrey) 50%
+    ),
+    linear-gradient(135deg, var(--middleGrey) 50%, transparent 50%),
+    linear-gradient(to right, var(--darklava), var(--darklava));
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 3em 3em;
+  background-repeat: no-repeat;
+}
+.companyForm > select:focus {
+  outline: none;
+}
+.formButton {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.grid-img img {
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Form end */
+/* @media screen {
+    article {
+        background-color: var(--middleGrey);
+        margin-top: 20px;
+        
+    }
+    aside {
+        background-color: middleGrey;
+        margin-top: 20px;
+        
+    }
+}
+@media screen and (min-width: 480px){
+    article {
+        background-color: lightsteelblue;
+        margin-top: 20px;
+        border: 3px solid black;
+        box-sizing: border-box;
+    }
+    aside {
+        background-color: middleGrey;
+        margin-top: 20px;
+        border: 3px solid black;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 768px){
+    article {
+        background-color: lightgrey;
+        margin-top: 20px;
+        border: 4px solid black;
+        box-sizing: border-box;
+    }
+    aside {
+        background-color: lime;
+        margin-top: 20px;
+        border: 4px solid black;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    article {
+        background-color: lime;
+        margin-top: 20px;
+        border: 6px solid black;
+        box-sizing: border-box;
+    }
+    aside {
+        background-color: lightgray;
+        margin-top: 20px;
+        border: 6px solid black;
+        box-sizing: border-box;
+    }
+} */
