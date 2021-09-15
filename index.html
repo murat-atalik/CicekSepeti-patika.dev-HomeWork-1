@@ -22,19 +22,22 @@
         src="https://i.picsum.photos/id/267/200/200.jpg?hmac=Y1nyfMYjg-MPsZP0aKx1TqI1ogQRSYtHkM5kpZpybqk" />
 </nav>
 
+<button class="menuButtonOn" name="on"> </button>
 <div class="sidebar">
+    <button class="menuButtonOff"> </button>
+
     <ul class="sidebar-menu-list d-flex flex-direction-column">
-        <h2 style="color: var(--logoColor);">Sidebar Header</h2>
+        <h2 style="color: var(--logoColor);">Menu</h2>
         <li class="sidebar-menu-item forms">
-            <a href="#" class="sidebar-menu-link d-flex">
-                <span class="sidebarSpan">Forms</span>
-            </a>
+
+            Forms
+
         </li>
 
         <li class="sidebar-menu-item cards">
-            <a href="#" class="sidebar-menu-link d-flex">
-                <span class="sidebarSpan">Cards</span>
-            </a>
+
+            Cards
+
         </li>
     </ul>
 </div>
@@ -42,20 +45,15 @@
 
 <div class="together">
     <form class="companyForm">
-        <label for="company">Company:</label><input id="company" type="text">
-        <br>
-        <label for="fname">First Name:</label><input id="fname" type="text">
-        <br>
-        <label for="lname">Last Name:</label><input id="lname" type="text">
-        <br>
-        <label for="email">Email Address:</label><input id="email" type="text">
-        <br>
-        <label for="title">Title:</label><input id="title" type="text">
-        <br>
-        <label for="phone">Phone:</label><input id="phone" type="text">
-        <br>
+        <label for="company">Company:</label><input id="company" name="Company" type="text">
+        <label for="fname">First Name:</label><input id="fname" name="First Name" type="text">
+        <label for="lname">Last Name:</label><input id="lname" name="Last Name" type="text">
+        <label for="email">Email Address:</label><input id="email" name='Email Address' type="email">
+        <label for="title">Title:</label><input id="title" name="Title" type="text">
+        <label for="phone">Phone:</label><input id="phone" name='Phone' type="text">
+
         <label for="session">252 Training Session 2021:</label>
-        <select name="dates" id="session">
+        <select name="252 Training Session 2021" id="session">
             <option value="q1">01/02/2021</option>
             <option value="q2">01/05/2021</option>
             <option value="q3">01/08/2021</option>
@@ -63,36 +61,36 @@
 
         </select>
 
-        <br>
         <label for="jobs">Job Function:</label>
 
          <div class="select">
 
-            <span><input type="radio" id="cM" name="job_function" value="Campaign Management">
-                <label for="cM">Campaign Management</label>
-            </span>
-            <span> <input type="radio" id="cRM" name="job_function" value="CRM Administration">
-                <label for="cRM">CRM Administration</label>
-            </span>
-            <span> <input type="radio" id="emaildep" name="job_function" value="Email Deployment">
-                <label for="emaildep">Email Deployment</label>
-            </span>
-            <span>
-                <input type="radio" id="partner" name="job_function" value="Partner">
-                <label for="partner">Partner</label>
-            </span>
-            <span> <input type="radio" id="employee" name="job_function" value="Employee">
-                <label for="employee">Employee</label>
-            </span>
+            <input type="radio" id="cM" name="job_function" value="Campaign Management">
+            <label for="cM">Campaign Management</label>
+            <br>
+            <input type="radio" id="cRM" name="job_function" value="CRM Administration">
+            <label for="cRM">CRM Administration</label>
+            <br>
+
+            <input type="radio" id="emaildep" name="job_function" value="Email Deployment">
+            <label for="emaildep">Email Deployment</label>
+            <br>
+
+            <input type="radio" id="partner" name="job_function" value="Partner">
+            <label for="partner">Partner</label>
+            <br>
+            <input type="radio" id="employee" name="job_function" value="Employee">
+            <label for="employee">Employee</label>
         </div>
 
 
-        <label for="requirements">Dietary Requirements:</label><input id="requirements" type="text">
-        <br>
-        <label for="exception">Exceptions?:</label><textarea name="exception" id="exception" cols="30"
+        <label for="requirements">Dietary Requirements:</label><input name="Dietary Requirements:" id="requirements"
+            type="text">
+
+        <label for="exception">Exceptions?:</label><textarea name="Exceptions?" id="exception" cols="30"
             rows="10"></textarea>
-        <br>
-        <button class="formButton" type="button" value="Submit">Submit</button>
+        <button class="formButton" type="button">Submit</button>
+
     </form>
 
     <div class="grid-container">
@@ -104,6 +102,9 @@
 </div>
 
 
+</div>
+<div class="modal">
+    <div class="modal-content"></div>
 </div>
 
 </body>

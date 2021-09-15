@@ -18,7 +18,9 @@ input {
   border: none;
   outline: none;
 }
-
+label {
+  margin-top: 2rem;
+}
 ul {
   list-style-type: none;
 }
@@ -76,7 +78,12 @@ body {
   height: 50px;
   border-radius: 50%;
 }
-
+.avatar:hover {
+  cursor: pointer;
+}
+.logo:hover {
+  cursor: pointer;
+}
 /* Form & Grid .Together */
 .together {
   background-color: var(--middleGrey);
@@ -87,13 +94,15 @@ body {
 
 /* Sidebar */
 .sidebar {
-  width: 210px;
-  height: 100vh;
+  width: 220px;
+  min-height: 600px;
   display: block;
   float: left;
-  background-color: var(--middleGrey);
-  border-right: 3px solid var(--darklava);
+  background-color: var(--darklava);
   margin-right: 5px;
+  padding: 1rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 .d-flex {
   display: flex;
@@ -119,13 +128,19 @@ a {
 .sidebar-menu-link {
   padding-left: 0.5rem;
 }
-
+.sidebar-menu-list > li:hover {
+  background-color: var(--alabaster);
+  cursor: pointer;
+}
+.sidebar-menu-list > li {
+  background-color: var(--logoColor);
+  cursor: pointer;
+  text-align: center;
+  border-radius: 2rem;
+}
 .sidebar-menu-link i {
   margin-right: 1rem;
   color: var(--logoColor);
-}
-.sidebarSpan {
-  color: var(--alabaster);
 }
 
 .grid-container {
@@ -149,9 +164,11 @@ a {
   flex-direction: column;
   align-items: stretch;
   margin-bottom: 1.2rem;
-  padding: 1rem;
-  border: 1px solid var(--darklava);
+  padding: 2rem;
+  border-radius: 2rem;
   width: 50rem;
+  background-color: var(--darklava);
+  color: var(--alabaster);
 }
 .companyForm > .select > span {
   display: block;
@@ -159,6 +176,7 @@ a {
 .companyForm > input {
   padding: 0.5rem;
   border-radius: 1rem;
+  min-width: 1rem;
 }
 .companyForm > textarea {
   border-radius: 1rem;
@@ -166,6 +184,7 @@ a {
   outline: none;
   resize: vertical;
   min-height: 2rem;
+  padding: 1rem;
 }
 .companyForm > select {
   padding: 0.5rem;
@@ -178,13 +197,9 @@ a {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: linear-gradient(
-      45deg,
-      transparent 50%,
-      var(--middleGrey) 50%
-    ),
-    linear-gradient(135deg, var(--middleGrey) 50%, transparent 50%),
-    linear-gradient(to right, var(--darklava), var(--darklava));
+  background-image: linear-gradient(45deg, transparent 50%, var(--darklava) 50%),
+    linear-gradient(135deg, var(--darklava) 50%, transparent 50%),
+    linear-gradient(to right, var(--middleGrey), var(--middleGrey));
   background-position: calc(100% - 20px) calc(1em + 2px),
     calc(100% - 15px) calc(1em + 2px), 100% 0;
   background-size: 5px 5px, 5px 5px, 3em 3em;
@@ -197,21 +212,91 @@ a {
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 1rem;
-}
-@media screen and (max-width: 480px) {
-  .sidebar {
-    display: none;
-  }
+  margin-top: 2rem;
 }
 
+.menuButtonOn {
+  background: url("/images/menu.png") no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  display: none;
+  margin-left: 1rem;
+}
+.menuButtonOff {
+  background: url("/images/close.png") no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  display: inline-block;
+  float: right;
+}
+.menuButtonOff:hover,
+.menuButtonOn:hover {
+  cursor: pointer;
+}
 .grid-img img {
   padding: 1rem;
   border-radius: 2rem;
   width: 100%;
   margin: 0 auto;
 }
-
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  .menuButtonOff {
+    display: none;
+  }
+  .menuButtonOn {
+    display: inline-block;
+  }
+}
 /* Form end */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 2rem;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  background: none;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* @media screen {
     article {
         background-color: var(--middleGrey);
