@@ -224,7 +224,7 @@ a {
   margin-left: 1rem;
 }
 .menuButtonOff {
-  background: url("/images/close.png") no-repeat;
+  background-image: url("/images/close.png") no-repeat;
   width: 24px;
   height: 24px;
   border: none;

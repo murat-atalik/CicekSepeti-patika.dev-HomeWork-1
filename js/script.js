@@ -133,13 +133,13 @@ document.querySelector(".avatar").addEventListener("click", githubPersonal);
 
 //Menu
 const toggleMenuOff = () => {
-  console.log(menuButtonOn.style.display);
+  /*   console.log(menuButtonOn.style.display); */
   sidebar.style.display = "none";
   together.style.display = "flex";
   toggleButton();
 };
 const toggleMenuOn = () => {
-  console.log(menuButtonOn.style.display);
+  /*   console.log(menuButtonOn.style.display); */
   document.documentElement.clientWidth <= 600
     ? ((together.style.display = "none"),
       (sidebar.style.display = "block"),
@@ -179,7 +179,7 @@ const formModal = () => {
   modalHeaderTitle.innerHTML = "Form answers";
   modal.addEventListener("click", close);
   modalHeaderBtn.addEventListener("click", close);
-  console.log(formData);
+  /*  console.log(formData); */
 
   for (let i = 0; i < formData.length - 1; i++) {
     const element = formData[i];
