@@ -87,9 +87,6 @@ body {
 /* Form & Grid .Together */
 .together {
   background-color: var(--middleGrey);
-  display: flex;
-  justify-content: space-evenly;
-  /*  */
 }
 
 /* Sidebar */
@@ -159,14 +156,14 @@ a {
 /* div abuslama kendine not ?DSAdasd*/
 
 .companyForm {
-  margin: 0 auto;
+  margin: auto;
   display: none;
   flex-direction: column;
   align-items: stretch;
-  margin-bottom: 1.2rem;
   padding: 2rem;
   border-radius: 2rem;
-  width: 50rem;
+  max-width: 90%;
+  width: auto;
   background-color: var(--darklava);
   color: var(--alabaster);
 }

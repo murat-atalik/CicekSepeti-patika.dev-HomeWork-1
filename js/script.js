@@ -169,6 +169,7 @@ const formModal = () => {
   const close = () => {
     modal.style.display = "none";
     modalContent.innerHTML = "";
+    document.querySelector(".companyForm").reset();
   };
 
   modalHeader.className = "model-header";
