@@ -105,7 +105,7 @@ const hideCards = () => {
   search.disabled = true;
   if (document.documentElement.clientWidth <= 600) {
     sidebar.style.display = "none";
-    together.style.display = "flex";
+    together.style.display = "block";
     toggleButton();
   }
 };
@@ -116,7 +116,7 @@ const hideForms = () => {
   search.disabled = false;
   if (document.documentElement.clientWidth <= 600) {
     sidebar.style.display = "none";
-    together.style.display = "flex";
+    together.style.display = "block";
     toggleButton();
   }
 };
@@ -135,7 +135,7 @@ document.querySelector(".avatar").addEventListener("click", githubPersonal);
 const toggleMenuOff = () => {
   /*   console.log(menuButtonOn.style.display); */
   sidebar.style.display = "none";
-  together.style.display = "flex";
+  together.style.display = "block";
   toggleButton();
 };
 const toggleMenuOn = () => {
@@ -144,7 +144,7 @@ const toggleMenuOn = () => {
     ? ((together.style.display = "none"),
       (sidebar.style.display = "block"),
       toggleButton())
-    : ((together.style.display = "flex"),
+    : ((together.style.display = "block"),
       (sidebar.style.display = "block"),
       toggleButton());
 };
