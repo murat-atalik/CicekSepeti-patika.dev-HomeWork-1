@@ -188,11 +188,13 @@ const formModal = () => {
       const modalBodyTxt = document.createElement("p");
       modalBodyTxt.innerHTML = "Job Function: " + element.value;
       modalBody.appendChild(modalBodyTxt);
+      console.log("Job Function: " + element.value);
     }
     if (element.type !== "radio") {
       const modalBodyTxt = document.createElement("p");
       modalBodyTxt.innerHTML = element.name + ": " + element.value;
       modalBody.appendChild(modalBodyTxt);
+      console.log(element.name + ": " + element.value);
     }
   }
   modalHeader.appendChild(modalHeaderBtn);
