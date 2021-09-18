@@ -213,7 +213,7 @@ a {
 }
 
 .menuButtonOn {
-  background: url("/images/menu.png") no-repeat;
+  background-image: url("/images/menu.png") no-repeat;
   width: 24px;
   height: 24px;
   border: none;
